@@ -6,8 +6,11 @@
   --aqua: #59c1bd;
   --light-aqua: #8dd3d1;
   --lighter-aqua: #c2e6e5;
+  /* todo modificar nombre y colores */
 
   /** Fonts **/
   --main-font: Verdana, Geneva, Tahoma, sans-serif;
   --second-font: 'Inter', sans-serif;
+
+  /* todo nuevas fuentes */
 }
