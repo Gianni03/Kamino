@@ -19,7 +19,7 @@
   },
   "hero2": {
     "h2": "Introduzione al problema",
-    "p": "Creiamo agenti di IA addestrati con la conoscenza della tua azienda per agire come il tuo miglior collaboratore… sempre disponibili. Automatizza le attività, rispondi alle domande e proteggi il know-how che rende unica la tua impresa.",
+    "p": "Creiamo agenti di IA addestrati con la conoscenza della tua azienda per agire come il tuo miglior collaboratore.",
     "assistantTitle": "Immagina questo:",
     "assistantItem1": "Il tuo ingegnere migliore se ne va… e con lui anni di conoscenze sul prodotto.",
     "assistantItem2": "Il tuo responsabile commerciale cambia strada… portandosi via informazioni chiave sulle trattative.",
@@ -27,14 +27,14 @@
     "p2": "Questa perdita di conoscenze frena la crescita… e mentre il tuo team perde tempo con compiti ripetitivi, l’IA potrebbe gestirli."
   },
   "hero3": {
-    "top": "Immagina la competenza del tuo miglior dipendente, disponibile 24 ore su 24, 7 giorni su 7.",
-    "box": "Con Cruxie, ogni dipendente e area aziendale ha un 'agente intelligente' addestrato con la conoscenza reale della tua azienda. In questo modo, automatizzi le attività ripetitive e unifichi la conoscenza della tua impresa per tutto il team… 24/7.",
+    "top": "L'expertise del tuo miglior dipendente, operativo 24/7.",
+    "box": "Con Cruxie, ogni dipendente e area aziendale ha un 'agente intelligente' addestrato con la conoscenza reale della tua azienda. In questo modo, automatizzi le attività ripetitive e unifichi la conoscenza della tua impresa per tutto il team.",
     "bottomTitle": "LA TUA AZIENDA EVOLVE.\n IL TUO LASCITO RIMANE.",
     "cta": "Voglio costruire il mio lascito ➜"
   },
   "hero4": {
-    "title": "PARLIAMO DELLA TUA EREDITÀ DIGITALE",
-    "subtitle": "Richiedi un incontro personalizzato gratuito con il nostro team.",
+    "title": "PARLIAMO",
+    "subtitle": "Domande? Lasciaci i tuoi dati e il nostro team ti contatterà personalmente.",
     "form": {
       "name": "Nome e Cognome:",
       "email": "Email:",
@@ -45,10 +45,9 @@
   },
   "hero5": {
     "title": "Coloro che hanno già creato la loro eredità digitale",
-    "benefit1": "Hanno dimezzato il tempo perso nella ricerca di informazioni chiave.",
-    "benefit2": "Hanno automatizzato attività critiche che prima richiedevano ore preziose.",
-    "benefit3": "Hanno preservato il know-how unico di ogni area.",
-    "benefit4": "Hanno scalato il business senza paura del turnover, perché il loro lascito digitale è sempre disponibile."
+    "benefit1": "Hanno centralizzato le conoscenze disperse in un unico luogo accessibile a tutto il team.",
+    "benefit2": "Hanno protetto il loro know-how dalla rotazione del personale, evitando di dover ricominciare da zero.",
+    "benefit3": "Hanno aumentato la loro produttività lasciando che l’IA si occupasse delle attività ripetitive."
   },
   "heroT": {
     "h2": "¿Vuoi ",
