@@ -96,7 +96,7 @@ const Hero4 = () => {
         {/* Imagen hardcodeada + subtítulo */}
         <div className={styles.leftColumn}>
           <img
-            src="/images/STICKER-INDIVIDUAL.png"
+            src="/images/robotsForm.png"
             alt="Asistente virtual"
             className={styles.botImage}
           />
