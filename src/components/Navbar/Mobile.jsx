@@ -35,20 +35,24 @@ export default function Mobile({ menuOpen, toggleMenu }) {
         <NavLink to="/faqs" className={styles.linkM} onClick={handleLinkClick}>
           <Trans i18nKey={"navbar.faq"}></Trans>
         </NavLink>
-        <NavLink to="/blog" className={styles.linkM} onClick={handleLinkClick}>
-          <Trans i18nKey={"navbar.blog"}></Trans>
-        </NavLink>
-
-        {/* Nuevo: Botón "Proba Cruxie" dentro del menú desplegable */}
         <a
-          href="https://cruxie.holocruxe.com/" // Asegúrate de que esta URL sea la correcta
+          href="https://blog.holocruxe.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.probaCruxieMobileButton} // Usamos una nueva clase para el estilo específico en móvil
-          onClick={handleLinkClick} // Para cerrar el menú al hacer clic
+          className={styles.linkM}
+          onClick={handleLinkClick}
         >
-          <Trans i18nKey={"navbar.cruxieButton"}>Proba Cruxie </Trans>
-          <span className={styles.plusSignMobile}>+</span> {/* Si tu botón tiene un '+' */}
+          <Trans i18nKey={"navbar.blog"}></Trans>
+        </a>
+        <a
+          href="https://cruxie.holocruxe.com/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.probaCruxieMobileButton} 
+          onClick={handleLinkClick} 
+        >
+          <Trans i18nKey={"navbar.cruxieButton"}></Trans>
+          <span className={styles.plusSignMobile}>+</span> 
         </a>
       </nav>
     </div>

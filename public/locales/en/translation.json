@@ -19,7 +19,7 @@
   },
   "hero2": {
     "h2": "Introduction to the problem",
-    "p": "We create AI agents trained with your company's knowledge to act as your best collaborator… always available. Automate tasks, answer questions, and protect the know-how that makes your business unique.",
+    "p": "We create AI agents trained with your company's knowledge to act as your best collaborator.",
     "assistantTitle": "Imagine this:",
     "assistantItem1": "Your star engineer leaves… taking years of product know-how with them.",
     "assistantItem2": "Your sales manager changes direction… and takes insights from key negotiations.",
@@ -27,14 +27,15 @@
     "p2": "This knowledge drain slows growth… and while your team loses time on repetitive tasks, AI could be handling them."
   },
   "hero3": {
-    "title": "Imagine the expertise of your best employee, available 24/7.",
-    "box": "With Cruxie, each employee and business area has an 'intelligent agent' trained with the real knowledge of your business. This way, you automate repetitive tasks and unify your company's knowledge for the entire team… 24/7.",
+    "title": "The expertise of your best employee, working 24/7.",
+    "box": "With Cruxie, each employee and business area has an 'intelligent agent' trained with the real knowledge of your business. This way, you automate repetitive tasks and unify your company's knowledge for the entire team.",
     "bottomTitle": "YOUR COMPANY EVOLVES.\n YOUR LEGACY REMAINS.",
     "cta": "I want to build my legacy ➜"
   },
   "hero4": {
-    "title": "LET'S TALK ABOUT YOUR DIGITAL LEGACY",
-    "subtitle": "Request a personalized meeting with our team at no cost.","form": {
+    "title": "LET'S TALK",
+    "subtitle": "Questions? Leave us your details and our team will contact you personally.",
+    "form": {
       "name": "Full Name:",
       "email": "Email:",
       "phone": "Phone:",
@@ -44,10 +45,9 @@
   },
   "hero5": {
     "title": "Those who have already created their digital legacy",
-    "benefit1": "Halved the time lost searching for key information.",
-    "benefit2": "Automated critical tasks that previously consumed valuable hours.",
-    "benefit3": "Preserved the unique know-how of each area.",
-    "benefit4": "Scaled their business without fear of staff turnover, because their digital legacy is always available."
+    "benefit1": "They consolidated scattered knowledge into a single, accessible hub for the whole team.",
+    "benefit2": "They safeguarded their know-how against staff turnover, avoiding the need to start from scratch.",
+    "benefit3": "They increased their productivity by letting AI handle repetitive tasks."
   },
   "heroT": {
     "h2": "Do you want ",

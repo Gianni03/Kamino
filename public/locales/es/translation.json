@@ -5,7 +5,7 @@
   },
   "navbar": {
     "home": "Inicio",
-    "about": "Conocenos",
+    "about": "Conócenos",
     "faq": "Preguntas Frecuentes",
     "blog": "Blog",
     "cruxieButton": "Prueba Cruxie"
@@ -19,7 +19,7 @@
   },
   "hero2": {
     "h2": "Introducción a problema",
-    "p": "Creamos agentes de IA entrenados con el conocimiento de tu empresa para actuar como tu mejor colaborador... siempre disponible. Automatiza tareas, responde preguntas y protege el know-how que hace única a tu empresa.",
+    "p": "Creamos agentes de IA entrenados con el conocimiento de tu empresa para actuar como tu mejor colaborador.",
     "assistantTitle": "Imagina esto:",
     "assistantItem1": "Tu ingeniero estrella se va... y con él, años de know-how del producto",
     "assistantItem2": "Tu gerente comercial cambia de rumbo… y se lleva insights de negociaciones clave",
@@ -27,14 +27,14 @@
     "p2": "Esta fuga de conocimiento frena el crecimiento.. Y mientras tu equipo pierde tiempo con tareas repetitivas que podrían automatizar con ia…"
   },
   "hero3": {
-    "title": "Imaginá el expertise de tu mejor empleado, disponible 24/7.",
-    "box": "Con Cruxie, cada empleado y área de negocio tiene un 'agente inteligente' entrenado con el conocimiento real de tu negocio. Así, automatizás tareas repetitivas y unificas el conocimiento de tu empresa para todo tu equipo… 24/7.",
+    "title": "El expertise de tu mejor empleado, trabajando 24/7.",
+    "box": "Con Cruxie, cada empleado y área de negocio tiene un 'agente inteligente' entrenado con el conocimiento real de tu negocio. Así, automatizás tareas repetitivas y unificas el conocimiento de tu empresa para todo tu equipo.",
     "bottomTitle": "TU EMPRESA EVOLUCIONA.\n TU LEGADO PERMANECE.",
     "cta": "Quiero construir mi legado ➜"
   },
   "hero4": {
-    "title": "HABLEMOS DE TU LEGADO DIGITAL",
-    "subtitle": "Solicite una reunión personalizada sin costo con nuestro equipo",
+    "title": "HABLEMOS",
+    "subtitle": "¿Consultas? Déjanos tus datos y nuestro equipo te contactará personalmente",
     "form": {
       "name": "Nombre y Apellido:",
       "email": "Email:",
@@ -45,10 +45,9 @@
   },
   "hero5": {
     "title": "Quienes ya crearon su legado digital",
-    "benefit1": "Redujeron a la mitad el tiempo perdido en buscar información clave.",
-    "benefit2": "Automatizaron tareas críticas que antes consumían horas valiosas.",
-    "benefit3": "Preservaron el know-how único de cada área.",
-    "benefit4": "Escalaron su negocio sin miedo a la rotación de personal, porque su legado digital se encuentra siempre disponible."
+    "benefit1": "Centralizaron conocimiento disperso en un solo lugar accesible a todo el equipo.",
+    "benefit2": "Protegieron su know-how frente a la rotación de personal, evitando reiniciar desde cero.",
+    "benefit3": "Aumentaron su productividad, dejando que la IA tome las tareas repetitivas."
   },
   "heroT": {
     "h2": "¿Quieres ",

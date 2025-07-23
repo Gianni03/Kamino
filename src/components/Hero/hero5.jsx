@@ -7,8 +7,7 @@ const Hero5 = () => {
   const benefits = [
     t("hero5.benefit1"),
     t("hero5.benefit2"),
-    t("hero5.benefit3"),
-    t("hero5.benefit4"),
+    t("hero5.benefit3")
   ];
 
   return (
