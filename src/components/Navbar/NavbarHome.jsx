@@ -195,14 +195,14 @@ const NavbarHome = () => {
         >
           {t("navbar.faq")}
         </NavLink>
-        <NavLink
-          to="/blog"
-          className={`${styles.link} ${
-            location.pathname === "/blog" ? styles.activeLink : ""
-          }`}
+        <a
+          href="https://blog.holocruxe.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
         >
           {t("navbar.blog")}
-        </NavLink>
+        </a>
         <div className={styles.indicator}></div>
       </nav>
       <div className={styles.rightNavControls}>
