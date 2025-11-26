@@ -1,0 +1,177 @@
+.hero4Section {
+  position: relative;
+  width: 100%;
+  padding: 12rem 1.5rem;
+  background-color: #0b0120;
+  color: white;
+  font-family: 'Balbek Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+
+/* Luz difusa invertida abajo a la izquierda */
+.hero4Section::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: -400px;
+  width: 50vw;
+  height: 100vh;
+  background-image: url("/images/luz.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  border-radius: 40%;
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 1;
+  transform: scaleY(-1) scaleX(1.2);
+
+  -webkit-mask-image: radial-gradient(circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+.title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  z-index: 2;
+  font-family: var(--font-main);
+}
+
+.leftColumn {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.botImage {
+  margin-top: 20%;
+  width: 90%;
+  height: auto;
+  margin-bottom: 1rem;
+  z-index: 3;
+  position: relative;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.rightColumn {
+  flex: 1;
+  background-color: #8c6ad61a;
+  min-width: 300px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+}
+
+.form label {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ✅ Campos translúcidos en desktop */
+.form input,
+.form textarea {
+  padding: 0.6rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: var(--font-main);
+  background-color: rgba(11, 1, 32, 0.6);
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.ctaButton {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 45px;
+  background-color: #3ba9fc;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-family: var(--font-main);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+.ctaButton:hover {
+  background-color: #3297e0;
+  transform: scale(1.03);
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    height: 48px;
+  }
+
+  /* Luz reducida en mobile */
+  .hero4Section::before {
+    left: -200px;
+    width: 100vw;
+    height: 90vh;
+    filter: blur(30px);
+    opacity: 0.4;
+    transform: scaleY(-1) scaleX(1);
+    border-radius: 50%;
+    background-position: center bottom;
+  }
+
+  /* ✅ Campos opacos en mobile */
+  .form input,
+  .form textarea {
+    background-color: #0b0120;
+    backdrop-filter: none;
+  }
+}

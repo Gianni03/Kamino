@@ -1,0 +1,106 @@
+{
+  "earth": {
+    "touch": "Toca el mundo",
+    "click": "Clickea el mundo"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Conócenos",
+    "faq": "Preguntas Frecuentes",
+    "blog": "Blog",
+    "cruxieButton": "Prueba Cruxie"
+  },
+  "landing": {
+    "hero": "Somos buenos creando legado",
+    "hero-a": "Creamos legado digital para PYMEs a través de la inteligencia artificial. El equipo de tu empresa puede cambiar. Tu legado, no.",
+    "hero-b": "Quiero construir mi legado →",
+    "hero-scroll-alt": "Icono de scroll",
+    "hero-scroll-text": "Clickea el mundo"
+  },
+  "hero2": {
+    "h2": "Introducción a problema",
+    "p": "Creamos agentes de IA entrenados con el conocimiento de tu empresa para actuar como tu mejor colaborador.",
+    "assistantTitle": "Imagina esto:",
+    "assistantItem1": "Tu ingeniero estrella se va... y con él, años de know-how del producto",
+    "assistantItem2": "Tu gerente comercial cambia de rumbo… y se lleva insights de negociaciones clave",
+    "assistantItem3": "Revisas 18 correos y 3 chats para encontrar POR QUÉ se tomó una decisión clave hace 6 meses…",
+    "p2": "Esta fuga de conocimiento frena el crecimiento.. Y mientras tu equipo pierde tiempo con tareas repetitivas que podrían automatizar con ia…"
+  },
+  "hero3": {
+    "title": "El expertise de tu mejor empleado, trabajando 24/7.",
+    "box": "Con Cruxie, cada empleado y área de negocio tiene un 'agente inteligente' entrenado con el conocimiento real de tu negocio. Así, automatizás tareas repetitivas y unificas el conocimiento de tu empresa para todo tu equipo.",
+    "bottomTitle": "TU EMPRESA EVOLUCIONA.\n TU LEGADO PERMANECE.",
+    "cta": "Quiero construir mi legado ➜"
+  },
+  "hero4": {
+    "title": "HABLEMOS",
+    "subtitle": "¿Consultas? Déjanos tus datos y nuestro equipo te contactará personalmente",
+    "form": {
+      "name": "Nombre y Apellido:",
+      "email": "Email:",
+      "phone": "Teléfono:",
+      "message": "Mensaje:",
+      "submit": "Enviar mensaje ➜"
+    }
+  },
+  "hero5": {
+    "title": "Quienes ya crearon su legado digital",
+    "benefit1": "Centralizaron conocimiento disperso en un solo lugar accesible a todo el equipo.",
+    "benefit2": "Protegieron su know-how frente a la rotación de personal, evitando reiniciar desde cero.",
+    "benefit3": "Aumentaron su productividad, dejando que la IA tome las tareas repetitivas."
+  },
+  "heroT": {
+    "h2": "¿Quieres ",
+    "span": "saber más?",
+    "p": "¡Únete a nuestra lista de espera y sé una de las primeras personas en probar esta experiencia única!"
+  },
+  "about": {
+    "title-1": "SOBRE NOSOTROS",
+    "holocruxe": "Somos especialistas en crear legado digital para PYMEs.",
+    "holocruxeP-1-line1": "Nacimos de una visión clara: que el conocimiento y la experiencia de cada empresa no se pierdan en el caos de la información dispersa ni en la rotación de personal. Creemos que cada negocio tiene un legado que merece trascender.",
+    "holocruxeP-1-line2": " Hoy, acompañamos a empresas que quieren dejar huella, ayudándolas a organizar su conocimiento y liberar el potencial de sus equipos.",
+    "title-2-line1": "Nuestros",
+    "title-2-line2": "Valores",
+    "authenticity": "Legado Inteligente",
+    "authenticityP": "Transformamos el conocimiento en un activo digital vivo, accesible y escalable, que impulsa el crecimiento de tu empresa.",
+    "connection": "Automatización Estratégica",
+    "connectionP": "Liberamos a tu equipo de tareas repetitivas y procesos manuales, permitiéndoles enfocarse en lo que realmente importa: la innovación y la estrategia.",
+    "privacy": "Conocimiento Seguro",
+    "privacyP": "Protegemos el activo más valioso de tu empresa: su información. Garantizamos la privacidad, la confidencialidad y la integridad de tus datos.",
+    "button-legacy": "Quiero construir mi legado"
+  },
+  "waitlist": {
+    "h2": "LISTA DE ESPERA ",
+    "btn": "SUSCRIBIRME",
+    "register": "FELICITACIONES! YA ESTAS ADENTRO!",
+    "register2": "Gracias por tu interés!",
+    "closeButton": "Cerrar"
+  },
+  "blog": {
+    "title-line1": "Nuestro blog todavía",
+    "title-line2": "está en construcción",
+    "btn-back-home": "Volver al HOME"
+  },
+  "common": {
+    "faq_line1": "Preguntas",
+    "faq_line2": "Frecuentes"
+  },
+  "faqs": {
+    "0": {
+      "question": "¿Qué es Holocruxe?",
+      "answer": "Es una plataforma de inteligencia artificial que te permite crear tus propios “Cruxies”: agentes inteligentes diseñados para centralizar el conocimiento y la experiencia de tu empresa en un legado digital vivo. Preservan el saber y automatizan tareas repetitivas, para que tu equipo se enfoque en lo estratégico."
+    },
+    "1": {
+      "question": "¿Cómo funciona CRUXIE?",
+      "answer": "Este aprende a partir de la información que le proporcionás: documentos, manuales, bases de datos, archivos históricos, entre otros. A partir de ahí, crea un modelo de conocimiento personalizado que le permite responder preguntas, automatizar procesos y asistir a tu equipo con precisión y eficiencia. "
+    },
+    "2": {
+      "question": "¿Qué tan privado son mis datos?",
+      "answer": "La seguridad y la privacidad son nuestra prioridad y garantizamos la confidencialidad e integridad de tu información. Todas las conversaciones con Cruxie son privadas por defecto, y solo vos decidís qué compartir, con quién y cuándo. Podés mantener tu Cruxie para uso interno o habilitarlos para que otros equipos accedan a su conocimiento. Vos tenés el control total sobre el legado digital de tu empresa."
+    },
+    "3": {
+      "question": "¿Cómo empiezo a usar Cruxie en mi organización?",
+      "answer": "Accedé desde la página principal y registrate. Podés crear una cuenta personal para explorar la plataforma o hacer clic en “crear una cuenta de empresa”, completar un formulario y nuestro equipo se pondrá en contacto para acompañarte en el proceso."
+    }
+  }
+}

@@ -1,0 +1,230 @@
+.container {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+    background-color: transparent;
+  }
+  
+  .logoContainer {
+    z-index: 1000;
+  }
+  
+  .svgLogo {
+    height: 2.5rem;
+    width: auto;
+  }
+  
+  .navbar {
+    display: flex; 
+    gap: 3rem;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-left: auto;
+  }
+  
+  .link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease transform;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  .link:hover {
+    transform: scale(1.2);
+  }
+  
+  .link:before,
+  .link:after {
+    content: "";
+    position: absolute;
+    background-color: #349aef;
+    transform: scale(0);
+  }
+  
+  .link::before {
+    border-radius: 50%;
+    top: -15%;
+    left: -15%;
+    width: 4px;
+    height: 4px;
+    transition: 0.5s ease transform;
+  }
+  
+  .link:after {
+    bottom: -35%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    transition: 0.5s ease transform;
+  }
+  
+  .link:hover::before,
+  .link:hover::after {
+    transform: scale(1);
+  }
+  
+  .activeLink {
+    font-weight: 700;
+    color: #349aef;
+    position: relative;
+  }
+  
+  .activeLink::before,
+  .activeLink::after {
+    content: "";
+    position: absolute;
+    transform: scale(1);
+    background-color: #349aef;
+    transition: 0.5s ease all;
+  }
+  
+  .activeLink::before {
+    border-radius: 50%;
+    top: -15%;
+    left: -15%;
+    width: 4px;
+    height: 4px;
+  }
+  
+  .activeLink::after {
+    bottom: -35%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+  }
+  
+  .activeLink:hover::before,
+  .activeLink:hover::after {
+    background-color: #349aef;
+  }
+
+  .rightNavControls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .probaCruxieLink {
+    background-color: #349aef;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(52, 154, 239, 0.4);
+  }
+  
+  .probaCruxieLink:hover {
+    background-color: #349aef;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(52, 154, 239, 0.5);
+  }
+  
+  .probaCruxieLink span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .probaCruxieLink .plusSign {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .mobile {
+    display: none; 
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburger {
+    width: 25px;
+    height: 25px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: none; 
+    }
+  
+    .rightNavControls {
+      display: flex;
+      gap: 1rem; 
+    }
+  
+    .probaCruxieLink {
+      display: none; 
+    }
+  
+    .mobile {
+      display: block; 
+    }
+  
+    .logoContainer {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .container {
+      justify-content: flex-end;
+    }
+    .svgLogo {
+      height: 1.8rem; 
+      width: auto;
+    }
+    .hamburger {
+      width: 30px;
+      height: auto;
+    }
+  
+    .logoContainer {
+      z-index: 1001;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .navbar {
+      gap: 1.5rem;
+      font-size: 1rem;
+      margin-right: 20px;
+    }
+    .probaCruxieLink {
+      font-size: 0.9rem;
+      padding: 7px 15px;
+    }
+    .probaCruxieLink .plusSign {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .probaCruxieLink {
+      display: flex; 
+    }
+    .mobile {
+      display: none; 
+    }
+  }

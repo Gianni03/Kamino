@@ -1,0 +1,237 @@
+.heroSection {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  margin-top: 50px;
+  overflow: visible;
+}
+
+
+
+.textContent {
+  flex: 1;
+  min-width: 300px;
+  max-width: 420px;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.mainTitle {
+  font-family: "Balbek Pro", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 1.2rem 0;
+  color: white;
+  word-spacing: 0.5rem;
+}
+
+.white {
+  color: white;
+}
+
+.gradientWord {
+  background: linear-gradient(90deg, #9f6eff 0%, #5d66ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+  color: white;
+  font-weight: 800;
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+.ctaButton {
+  font-family: var(--font-main);
+  color: white;
+  width: 100%;
+  max-width: 320px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #359aee;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  padding: 0 1.5rem;
+  gap: 0.5rem;
+  align-self: flex-start;
+  margin-top: 1.5rem;
+}
+
+.ctaButton:hover {
+  background-color: #227cd1;
+  transform: scale(1.02);
+}
+
+.earthWrapper {
+  flex: 1;
+  min-width: 300px;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  margin-top: 0;
+}
+
+.earthWrapper canvas {
+  width: 100% !important;
+  height: 60vh !important;
+  max-height: 90vh;
+  object-fit: contain;
+  overflow: visible;
+}
+.earthCanvasWrapper {
+  width: 100%;
+  /* max-width: 360px; */
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.earthCanvasWrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+  overflow: visible;
+}
+
+/* Scroll icon */
+.scrollIcon {
+  position: absolute;
+  bottom: 1rem;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5d66ff;
+  font-size: 0.85rem;
+  animation: pulse 2s infinite;
+}
+
+.scrollIcon img {
+  width: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    margin-top: 0;
+    overflow: visible;
+  }
+
+  .textContent {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .ctaButton {
+    height: 3.2rem;
+    font-size: 1rem;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .earthWrapper {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .earthWrapper canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+  }
+
+  .scrollIcon {
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: none;
+    font-size: 0.75rem;
+  }
+
+  .scrollIcon img {
+    width: 2.2rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+/* Mobile reducido */
+@media screen and (max-width: 480px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .earthWrapper {
+    margin-top: 0.5rem;
+    max-width: 320px;
+  }
+
+  .earthWrapper canvas {
+    height: auto !important;
+  }
+}

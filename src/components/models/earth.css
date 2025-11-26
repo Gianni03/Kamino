@@ -1,13 +1,136 @@
 .earth-canvas {
   z-index: 1;
   padding: 0;
+  height: 35vh !important;
 }
 
-@media screen and (max-width: 920px) {
+div.null {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg-click {
+  position: relative;
+  left: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  bottom: 1rem;
+  left: 8rem;
+}
+
+div.iconText {
+  position: relative;
+  bottom: 6rem;
+  left: 2rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 0.6rem;
+}
+
+.mouse {
+  width: 2.8rem;
+}
+
+@media screen and (width: 1280px) {
   .earth-canvas {
-    height: 85vh !important;
+    width: 400px !important;
+    margin-top: -150px !important;
+    margin-bottom: 50px;
   }
-  .svg-click {
-    display: none;
+}
+
+@media screen and (min-width: 412px) {
+  div.iconText {
+    left: 3rem;
+  }
+
+  .mouse {
+    width: 3.5rem;
+  }
+
+  .text {
+    font-size: 0.6rem;
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .earth-canvas {
+    height: 40vh !important;
+  }
+
+  div.iconText {
+    left: 12rem;
+  }
+
+  .mouse {
+    left: 15rem;
+    width: 5rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .earth-canvas {
+    height: 40vh !important;
+  }
+
+  div.iconText {
+    left: 18rem;
+    bottom: 10rem;
+  }
+
+  .mouse {
+    padding-bottom: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .text {
+    font-size: 1rem;
+  }
+
+  div.iconText {
+    width: 4rem;
+    left: 70%;
+  }
+
+  .earth-canvas {
+    padding-top: 3rem;
+    height: 70vh !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .earth-canvas {
+    height: 90vh !important;
+  }
+
+  div.iconText {
+    bottom: 15rem;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .earth-canvas {
+    margin-top: 5rem !important;
   }
 }

@@ -1,20 +1,47 @@
-import React, { Suspense, useRef } from "react";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
-import CanvasLoader from "./Loader";
-import { Canvas } from "@react-three/fiber";
-import "./earth.css";
-import Stars from "../Stars/stars";
-import CircleSvg from "../../icons/Ellipse 3.svg";
-import IconSvg from "../../icons/mouse.svg";
+// src/components/models/EarthCanvas.tsx
+import React, { Suspense, useRef, useEffect, useState } from 'react';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { Canvas, useFrame } from '@react-three/fiber';
+import CanvasLoader from './Loader';
+import useTablet from '../../hooks/useTablet'; // Asegurate que el alias esté definido
+import './earth.css';
 
 const Earth = () => {
   const earthRef = useRef();
-  const earth = useGLTF("./planet/scene.gltf");
+  const earth = useGLTF('./planet/scene.gltf');
+  const tabletType = useTablet();
+
+  // Estados para escalar y posicionar correctamente el modelo
+  const [scale, setScale] = useState(3.1);
+  const [yPos, setYPos] = useState(0);
+
+  useEffect(() => {
+    switch (tabletType) {
+      case 'horizontalCut':
+        setScale(2.3);
+        setYPos(0);
+        break;
+      case 'standard':
+        setScale(2.5);
+        setYPos(0);
+        break;
+      case 'wideTablet':
+        setScale(2.8);
+        setYPos(0);
+        break;
+      case 'needsMarginFix':
+        setScale(3.1);
+        setYPos(-0.4);
+        break;
+      default:
+        setScale(3.1);
+        setYPos(0);
+    }
+  }, [tabletType]);
 
   useFrame(() => {
     if (earthRef.current) {
-      earthRef.current.rotation.y += 0.003; // velocidad de rotacion
+      earthRef.current.rotation.y += 0.007;
     }
   });
 
@@ -22,16 +49,16 @@ const Earth = () => {
     <primitive
       ref={earthRef}
       object={earth.scene}
-      scale={2.8}
-      position={[0, 0.5, 0]} //la posicion!
+      scale={[scale, scale, scale]} // ✅ CORRECTO: debe ser array
+      position={[0, yPos, 0]}       // ✅ CORRECTO: también array
     />
   );
 };
 
 const EarthCanvas = () => {
   return (
-    <div style={{ position: "relative" }}>
-      <Canvas className="earth-canvas" style={{ height: "1000px" }}>
+    <div className="earth-container">
+      <Canvas className="earth-canvas" style={{ marginTop: '-4.5rem' }}>
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls
             enableZoom={false}
@@ -40,35 +67,9 @@ const EarthCanvas = () => {
             minPolarAngle={Math.PI / 2}
           />
           <Earth />
-          <Stars />
           <Preload all />
         </Suspense>
       </Canvas>
-      <div className="svg-click">
-        <img
-          src={CircleSvg}
-          alt="circle"
-          style={{ position: "absolute", bottom: "300px", right: "100px" }}
-        />
-        <img
-          src={IconSvg}
-          alt="icon"
-          style={{ position: "absolute", bottom: "320px", right: "115px" }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            bottom: "250px",
-            right: "100px",
-            userSelect: "none",
-            color: "white",
-            textAlign: "center",
-          }}
-        >
-          <p>Click in</p>
-          <p>the world</p>
-        </div>
-      </div>
     </div>
   );
 };

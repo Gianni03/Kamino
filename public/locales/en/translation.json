@@ -1,0 +1,101 @@
+{
+  "earth": {
+    "touch": "Touch the world",
+    "click": "Click in the world"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "cruxieButton": "Test Cruxie "
+  },
+  "landing": {
+    "hero": "We are good at creating legacy",
+    "hero-a": "We create digital legacy for SMEs through artificial intelligence. Your team may change. Your legacy won't.",
+    "hero-b": "I want to build my legacy →",
+    "hero-scroll-alt": "Scroll icon",
+    "hero-scroll-text": "Click the world"
+  },
+  "hero2": {
+    "h2": "Introduction to the problem",
+    "p": "We create AI agents trained with your company's knowledge to act as your best collaborator.",
+    "assistantTitle": "Imagine this:",
+    "assistantItem1": "Your star engineer leaves… taking years of product know-how with them.",
+    "assistantItem2": "Your sales manager changes direction… and takes insights from key negotiations.",
+    "assistantItem3": "You review 18 emails and 3 chats just to find out WHY a key decision was made 6 months ago…",
+    "p2": "This knowledge drain slows growth… and while your team loses time on repetitive tasks, AI could be handling them."
+  },
+  "hero3": {
+    "title": "The expertise of your best employee, working 24/7.",
+    "box": "With Cruxie, each employee and business area has an 'intelligent agent' trained with the real knowledge of your business. This way, you automate repetitive tasks and unify your company's knowledge for the entire team.",
+    "bottomTitle": "YOUR COMPANY EVOLVES.\n YOUR LEGACY REMAINS.",
+    "cta": "I want to build my legacy ➜"
+  },
+  "hero4": {
+    "title": "LET'S TALK",
+    "subtitle": "Questions? Leave us your details and our team will contact you personally.",
+    "form": {
+      "name": "Full Name:",
+      "email": "Email:",
+      "phone": "Phone:",
+      "message": "Message:",
+      "submit": "Send Message ➜"
+    }
+  },
+  "hero5": {
+    "title": "Those who have already created their digital legacy",
+    "benefit1": "They consolidated scattered knowledge into a single, accessible hub for the whole team.",
+    "benefit2": "They safeguarded their know-how against staff turnover, avoiding the need to start from scratch.",
+    "benefit3": "They increased their productivity by letting AI handle repetitive tasks."
+  },
+  "heroT": {
+    "h2": "Do you want ",
+    "span": "to know more?",
+    "p": "Join our waiting list and be one of the first people to try this unique experience."
+  },
+  "about": {
+    "title-1": "ABOUT US",
+    "holocruxe": "We specialize in creating digital legacies for small and medium-sized businesses.",
+    "holocruxeP-1-line1": "We were born from a clear vision: to ensure that the knowledge and experience of each company are not lost in scattered information or employee turnover. We believe every business has a legacy worth preserving.",
+    "holocruxeP-1-line2": "Today, we partner with companies that want to make a lasting impact—helping them organize their knowledge and unlock the full potential of their teams.",
+    "title-2-line1": "Our",
+    "title-2-line2": "Values",
+    "authenticity": "Smart Legacy",
+    "authenticityP": "We turn knowledge into a living, digital asset—accessible, scalable, and designed to drive your company’s growth.",
+    "connection": "Strategic Automation",
+    "connectionP": "We free your team from repetitive tasks and manual processes, allowing them to focus on what truly matters: innovation and strategy.",
+    "privacy": "Secure Knowledge",
+    "privacyP": "We protect your company’s most valuable asset—its information. We ensure the privacy, confidentiality, and integrity of your data.",
+    "button-legacy": "I want to build my legacy"
+  },
+  "waitlist": {
+    "h2": "WAITLIST",
+    "btn": "SUSCRIBE",
+    "register": "CONGRATULATIONS! YOU ARE ALREADY ON BOARD!",
+    "register2": "Thank you for signing up!",
+    "closeButton": "Close"
+  },
+  "common": {
+    "faq_line1": "Frequently",
+    "faq_line2": "Asked Questions"
+  },
+  "faqs": {
+    "0": {
+      "question": "What is Holocruxe? ",
+      "answer": "Holocruxe is an AI-powered platform that lets you create your own 'Cruxies'—intelligent agents designed to centralize your company's knowledge and expertise into a living digital legacy. They preserve your know-how and automate repetitive tasks so your team can focus on strategic initiatives."
+    },
+    "1": {
+      "question": "How does Cruxie work?",
+      "answer": "Cruxie learns from the information you provide: documents, manuals, databases, historical files, and more. From there, it builds a personalized knowledge model that allows it to answer questions, automate workflows, and assist your team with precision and efficiency."
+    },
+    "2": {
+      "question": "How private is my data?",
+      "answer": "Security and privacy are our top priorities. We guarantee the confidentiality and integrity of your information. All conversations with Cruxie are private by default, and only you decide what to share, with whom, and when. You can keep your Cruxie for internal use or enable other teams to access its knowledge. You have full control over your company’s digital legacy."
+    },
+    "3": {
+      "question": "How do I start using Cruxie in my organization?",
+      "answer": "Simply go to our homepage and sign up. You can create a personal account to explore the platform, or click on 'Create a company account,' fill out the form, and our team will contact you to guide you through the onboarding process."
+    }
+  }
+}

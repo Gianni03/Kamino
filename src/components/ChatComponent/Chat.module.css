@@ -1,0 +1,274 @@
+/* Chat.module.css */
+.chatContainer {
+  user-select: text;
+}
+.chatContainer {
+  display: none;
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chatHeader {
+  position: relative;
+  padding: 9px;
+  background: #0e2130;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: #59c1bd;
+}
+
+.closeIcon:hover {
+  cursor: pointer;
+}
+
+.chatMessages {
+  padding: 10px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chatMessages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.chatMessages::-webkit-scrollbar-button {
+  display: none;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.userMessage {
+  background-color: #e5f4e5;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-left: auto;
+}
+
+.botMessage {
+  background-color: #f2f2f2;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  outline: none;
+}
+
+.sendButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
+}
+@keyframes typingAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.typing {
+  padding: 8px 13px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  display: inline-block;
+  overflow: hidden;
+  animation: typingAnimation 1.5s infinite;
+}
+
+@media screen and (max-width: 725px) {
+  .input {
+    font-size: 13px;
+    padding: 6px;
+    margin-right: 5px;
+  }
+
+  .sendButton {
+    font-size: 13px;
+    padding: 6px;
+  }
+  .userMessage {
+    font-size: 13px;
+  }
+
+  .botMessage {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .chatContainer {
+    width: 330px;
+    right: 15px;
+  }
+  .userMessage {
+    font-size: 12px;
+  }
+
+  .botMessage {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .chatContainer {
+    width: 315px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-height: 580px) and (min-width: 500px) {
+  .chatContainer {
+    width: 70vw;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 370px;
+    max-height: 370px;
+  }
+  .chatMessages {
+    min-height: 275px;
+    max-height: 275px;
+  }
+  .input {
+    font-size: 13px;
+    padding: 6px;
+    margin-right: 5px;
+  }
+
+  .sendButton {
+    font-size: 13px;
+    padding: 6px;
+  }
+  .userMessage {
+    font-size: 14px;
+    width: fit-content;
+    max-width: 70%;
+  }
+
+  .botMessage {
+    font-size: 14px;
+    width: fit-content;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .chatContainer {
+    width: 85vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 350px;
+    max-height: 350px;
+  }
+  .chatMessages {
+    min-height: 259px;
+    max-height: 259px;
+  }
+  .input {
+    font-size: 13px;
+    padding: 6px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .chatContainer {
+    width: 85vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 350px;
+    max-height: 350px;
+  }
+  .chatMessages {
+    min-height: 259px;
+    max-height: 259px;
+  }
+  .input {
+    font-size: 13px;
+    padding: 6px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-height: 380px) {
+  .chatContainer {
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 330px;
+    max-height: 330px;
+  }
+  .chatMessages {
+    min-height: 240px;
+    max-height: 240px;
+  }
+  .input {
+    font-size: 13px;
+    padding: 6px;
+    margin-right: 5px;
+  }
+}

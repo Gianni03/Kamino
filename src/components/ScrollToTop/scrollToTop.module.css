@@ -1,0 +1,22 @@
+html {
+ scroll-behavior: smooth;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  height: 5rem;
+  
+}
+.arrowcircle{
+position: absolute;
+right: 0rem;
+width: 4rem;
+bottom: 1rem;
+}
+
+@media screen and (max-width: 475px) {
+  .arrowcircle{
+    width: 3rem;
+  }
+}

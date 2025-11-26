@@ -5,7 +5,7 @@ import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(30000), { radius: 10.0 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(6000), { radius: 10.0 }));
 
   for (let i = 0; i < sphere.length; i += 3) {
     const dx = sphere[i];

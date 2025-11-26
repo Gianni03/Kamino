@@ -1,9 +1,53 @@
 @import url('./normalize.css');
 @import url('./variables.css');
 
-html {
-  background: var(--dark);
-  background: linear-gradient(0deg, var(--dark) 0%, var(--darker) 100%);
+html, body, #root {
+  background-color: var(--color-bg);
+  height: 100%;
+  margin: 0;
+  padding: 0; 
+  overflow-x: hidden; 
+}
+
+/* 🌐 Estilos globales para SweetAlert2 */
+.swal2-custom-popup {
+  max-width: 400px !important;
+  padding: 1.5rem !important;
+  font-family: 'Poppins', sans-serif !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 12px !important;
+  background-color: #1b1433 !important;
+  color: white !important;
+}
+
+.swal2-confirm-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.5rem !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  background-color: #5d66ff !important;
+  border-radius: 9999px !important;
+  color: white !important;
+  border: none !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  min-width: 100px;
+}
+
+
+
+@-webkit-keyframes hide {
+  from {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+
+  to {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
 }
 
 @keyframes hide {
@@ -11,6 +55,7 @@ html {
     max-height: 100vh;
     overflow-y: hidden;
   }
+
   to {
     max-height: 100vh;
     overflow-y: hidden;
@@ -18,7 +63,24 @@ html {
 }
 
 .appContainer {
+  -webkit-animation: hide 7.5s;
   animation: hide 7.5s;
+}
+
+body {
+  background-color: var(--color-bg);
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer / Edge */
+  user-select: none;
+  /* Non-prefixed version */
 }
 
 body::-webkit-scrollbar {
@@ -26,8 +88,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px var(--darker);
-  background-color: var(--darker);
+  box-shadow: inset 0 0 6px var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -36,5 +98,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: var(--lighter-aqua);
+  background-color: var(--color-bg);
 }

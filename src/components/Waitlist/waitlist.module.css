@@ -1,107 +1,121 @@
 .waitlist {
   position: relative;
-  z-index: 2;
-  min-height: 80vh;
+  z-index: 0;
+  height: 80vh;
   scroll-snap-align: start;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5px;
-  padding-top: 10px;
-  margin: 10px;
-  margin-bottom: 20px;
+  width: 90%;
+  height: 50%;
 }
+
+.waitlistView {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+img.image {
+  width: 20%;
+  margin-bottom: -1rem;
+  height: 7rem;
+}
+.ligths {
+  width: 50%;
+  margin-bottom: -1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 .text_section {
-  font-size: 20px;
-  color: white;
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
+  background: var(--color-input);
+  border-radius: 5.625rem;
+  box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 7vh;
 }
 
 .waitlist h2 {
-  color: #fff;
-  font-weight: 100;
-  font-size: 40px;
+  color: var(--color-font);
+  font-size: 1.1rem;
+  width: 100%;
 }
+
 .join_waitlist {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 500px;
+  gap: 1rem;
+  width: 90vw;
   margin: 0 auto;
   margin-top: 150px;
-}
-.join_waitlist p {
-  color: white;
-  margin: 20px auto 40px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 20px;
-  line-height: 1.2;
+  align-self: center;
 }
 
 .join_waitlist input {
-  /* background-color: #20435e;
-    border: none;
-    border-bottom: 2px solid #fff; */
-  color: #fff;
-  font-size: 18px;
+  color: var(--color-font);
+  font-size: 0.8rem;
   outline: none;
-  padding: 16px 15px;
-  transition: border-color 0.3s;
-
-  /* From https://css.glass */
-  background: rgba(133, 145, 145, 0.77);
-  border-radius: 8px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
-  border: 1px solid #c2e6e5;
+  padding: 0.7rem;
+  background: var(--color-input);
+  border-radius: 5.625rem;
+  border: 1px solid var(--color-border);
+  width: 50vw;
+  height: 3rem;
+  align-self: center;
 }
+
+.join_waitlist input::-webkit-input-placeholder {
+  color: var(--color-font);
+}
+
+.join_waitlist input::-moz-placeholder {
+  color: var(--color-font);
+}
+
+.join_waitlist input:-ms-input-placeholder {
+  color: var(--color-font);
+}
+
+.join_waitlist input::-ms-input-placeholder {
+  color: var(--color-font);
+}
+
 .join_waitlist input::placeholder {
-  color: white;
+  color: var(--color-font);
 }
 
 .join_waitlist input:focus {
-  border-color: #c2e6e5;
+  border-color: var(--color-border);
 }
 
 .join_waitlist button {
-  color: black;
-  background-color: #c2e6e5;
-  border-radius: 8px;
+  border: none;
+  height: 3rem;
+  width: 50vw;
+  margin: 2rem auto;
+  color: var(--color-font);
+  background: var(--color-bgBtn);
+  border-radius: 2.5rem;
+  outline: none;
   cursor: pointer;
-  font-size: 20px;
-  padding: 16px;
+  padding: 0.6rem;
+  font-size: 0.6rem;
   font-weight: 600;
-  transition: background-color 0.3s;
 }
 
 .join_waitlist button:hover {
-  background-color: #9ae2e0;
-}
-
-#waitlist {
-  height: 100%;
-  /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
-  overflow: auto;
-  z-index: 1;
-}
-
-.stars_background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  background: linear-gradient(90deg, #04206796, #1e88e5 100%);
+  color: var(--color-font);
+  transition: all 0.3s ease-in-out;
 }
 
 .title {
@@ -109,31 +123,110 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 70vw;
 }
 
 .title::before,
 .title::after {
-  content: '';
-  position: absolute;
+  content: "";
   top: 50%;
-  width: 30%;
+  width: 25%;
   height: 1px;
-  background: linear-gradient(to right, #20435e, #fff 50%);
+  background: linear-gradient(to left, #1e88e5 -38.76%, #989ea4 110.08%);
   background-size: 200% 100%;
 }
 
 .title::before {
-  left: -10%;
+  left: 5%;
 }
 
 .title::after {
-  right: -10%;
-  background: linear-gradient(to left, #20435e, #fff 50%);
+  right: 5%;
+  background: linear-gradient(to rigth, #1e88e5 -38.76%, #989ea4 110.08%);
 }
 
 .form_and_model {
   display: flex;
   justify-content: flex;
-  margin-top: -150px;
-  
+  margin-top: -175px;
+  width: 50vw;
+}
+.captcha{
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  img.image {
+    width: 80%;
+    margin-bottom: 0rem;
+    height: 6rem;
+  }
+  .title::before,
+  .title::after {
+    width: 50%;
+  }
+  .join_waitlist input {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+  .join_waitlist button {
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    height: 3rem;
+    width: 55%;
+  }
+  .waitlist{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .join_waitlist input {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: 1.2rem;
+    height: 3rem;
+  }
+  .join_waitlist button {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    height: 4rem;
+  }
+
+  .waitlist h2 {
+    font-size: 1.5rem;
+  }
+  .waitlist{
+    margin-top: 2rem;
+  }
+  .text_section {
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .join_waitlist input {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    width: 90%;
+  }
+  .join_waitlist button {
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .join_waitlist input {
+    font-size: 1.3rem;
+    height: 3rem;
+  }
+  .join_waitlist button {
+    font-size: 1.2rem;
+    height: 3rem;
+  }
+
+  .waitlist h2 {
+    font-size: 1.8rem;
+  }
+  .text_section {
+    height: 4rem;
+  }
 }

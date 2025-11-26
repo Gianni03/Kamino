@@ -1,57 +1,131 @@
-.container {
-  padding: 1rem 2rem;
+header.container {
+  padding: 1.5rem 1rem;
   width: 100%;
-  height: 10vh;
+  height: 5.5vh;
   display: flex;
-}
-
-.logoContainer {
+  align-items: center;
+  gap: 30px;
   position: relative;
-  flex: 1;
+  z-index: 999;
+}
+
+.allLang {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  background-color: var(--color-bg-dark);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 8px 20px;
+  gap: 8px;
+  z-index: 102;
+  white-space: nowrap;
+}
+
+.allLang .langButton img {
+  width: 1.5rem;
+}
+
+.button {
+  margin: 0.5rem;
+}
+.langButton img {
+  width: 1.8rem;
+  height: auto;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+div.langButton {
+  height: auto;
+}
+.hidden {
+  background-color: transparent !important;
+  border: none !important;
+}
+button.langButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
   display: flex;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+button.langButton:hover {
+  border-radius: 50%;
 }
 
-.logoContainerAnim {
-  animation: entranceContainer 7.5s 1 ease;
-}
-
-.svgLogoAnim {
-  animation: entranceLogo 7.5s 1 ease;
-}
-
-.svgLogo {
-  width: 15rem;
-}
-
-.navbar {
+.buttons {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex: row;
+  width: 40%;
+  height: auto;
+  font-size: 0.8rem;
+}
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
   flex: 1;
+}
 
-  font-size: 1rem;
-  opacity: 0;
+.langContainer {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  z-index: 101;
+  border-radius: 5px;
+  padding: 4px 18px;
+  cursor: pointer;
+}
+.langContainer:hover {
+  background-color: transparent;
+  box-shadow: 0 0 15px 5px rgba(89, 193, 189, 0.4);
+  transform: scale(1.05);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.navBarContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+  -webkit-animation: entranceNavbar 1.5s forwards ease;
   animation: entranceNavbar 1.5s forwards ease;
 }
-
+.mobile img {
+  height: 1.3rem;
+}
+.mobile {
+  -webkit-animation: entranceNavbar 1.5s forwards ease;
+  animation: entranceNavbar 1.5s forwards ease;
+}
 .navbarAnim {
+  -webkit-animation-delay: 6.5s;
   animation-delay: 6.5s;
 }
 
 .navbar > *,
 .navbarAnim > * {
   font-family: var(--main-font);
-  color: var(--white);
+  color: #349aef;
 }
 
 .link {
   position: relative;
   margin: 0 1rem;
   text-decoration: none;
-
   transition: 0.3s ease transform;
+  color: var(--color-font);
+  font-family: var(--font-main);
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 .link:hover {
@@ -60,10 +134,10 @@
 
 .link:before,
 .link:after {
-  content: '';
+  content: "";
   position: absolute;
 
-  background-color: var(--aqua);
+  background-color: #349aef;
   transform: scale(0);
 }
 
@@ -94,11 +168,10 @@
 
 .activeLink::before,
 .activeLink::after {
-  content: '';
+  content: "";
   position: absolute;
   transform: scale(1);
-
-  background-color: var(--aqua);
+  background-color: #349aef;
   transition: 0.5s ease all;
 }
 
@@ -120,7 +193,10 @@
 
 .activeLink:hover::before,
 .activeLink:hover::after {
-  background-color: var(--aqua);
+  background-color: #349aef;
+}
+.navbar {
+  display: none;
 }
 
 .navbar > button {
@@ -137,49 +213,81 @@
 }
 
 nav button:hover {
-  background-color: var(--white);
+  background-color: var(--color-font);
   color: var(--dark);
+}
+
+.svgLogo {
+  width: 9rem;
+}
+
+@-webkit-keyframes entranceContainer {
+  0% {
+    height: 98vh;
+  }
+
+  50% {
+    height: 98vh;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 100%;
+  }
 }
 
 @keyframes entranceContainer {
   0% {
     height: 98vh;
   }
+
   50% {
     height: 98vh;
   }
+
   75% {
     height: 100%;
   }
+
   100% {
     height: 100%;
   }
 }
 
-@keyframes entranceLogo {
+@-webkit-keyframes entranceLogo {
   0% {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%) scale(3);
-  }
-  50% {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%) scale(3);
-  }
-  75% {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    transform: translateX(-20px);
   }
   100% {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%) scale(1);
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes entranceLogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes entranceNavbar {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -188,59 +296,107 @@ nav button:hover {
     opacity: 0;
     transform: translateY(-100%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* NAVBAR mobile */
-.mobile {
-  display: none;
-}
-.hamburger {
-  width: 32px;
-  right: 30px;
-  top: 20px;
-  position: absolute;
+@-webkit-keyframes entranceLogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-@media screen and (max-width: 920px) {
-  .svgLogo {
-    width: 10rem;
+@keyframes entranceLogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.navBarContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
   }
   .navbar {
-    display: none;
+    margin-top: 0.5rem;
+    display: flex;
+    font-size: 0.8rem;
+    opacity: 0;
+    -webkit-animation: entranceNavbar 1.5s forwards ease;
+    animation: entranceNavbar 1.5s forwards ease;
+  }
+  header.container {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    z-index: 999;
+  }
+  .langContainer {
+    z-index: 101;
   }
   .mobile {
-    display: flex;
-    flex: 1;
+    display: none;
   }
 
-  @keyframes entranceLogo {
-    0% {
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    75% {
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    100% {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(0, -50%) scale(1);
-    }
+  .svgLogo {
+    width: 11rem;
+  }
+  .langButton img {
+    width: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    font-size: 1.1rem;
+  }
+  .langButton img {
+    width: 1.8rem;
+  }
+  .svgLogo {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+  header.container {
+    z-index: 999;
+  }
+  .langContainer {
+    z-index: 101;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header.container {
+    margin: 0.5rem;
+    z-index: 999;
+  }
+  .langContainer {
+    z-index: 101;
+  }
+  .navbar {
+    font-size: 1.2rem;
+  }
+  .langButton img {
+    width: 2.3rem;
+  }
+  .svgLogo {
+    width: 15rem;
+  }
+  .langButton img {
+    width: 1.8rem;
   }
 }

@@ -1,0 +1,110 @@
+.mobilContainer {
+  background-color: #0a092a;
+  width: 80vw;
+  height: auto;
+  min-height: 50vh;
+  z-index: 22;
+  position: fixed;
+  top: 1.5rem;
+  right: 0;
+  left: auto;
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 0rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.hamburger {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.navMobile {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  height: 50%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.linkM {
+  font-size: 1.5rem;
+  font-family: var(--font-main);
+  color: white;
+  text-decoration: none;
+}
+
+.ligths {
+  height: 29%;
+  display: flex;
+  align-items: end;
+  width: 100vw;
+}
+
+.navMobileVisible {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.probaCruxieMobileButton {
+  background-color: #349aef; 
+  color: white;
+  font-family: var(--font-main); 
+  font-size: 1.3rem; 
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px; 
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem; 
+  box-shadow: 0 4px 8px rgba(52, 154, 239, 0.4); 
+}
+
+.probaCruxieMobileButton:hover {
+  background-color: #349aef; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(52, 154, 239, 0.5);
+}
+
+.plusSignMobile {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 412px) {
+  .ligths {
+    height: 33%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ligths {
+    width: 100vw;
+  }
+  .linkM {
+    font-size: 2rem;
+  }
+  .ligths {
+    height: 35%;
+  }
+
+  .mobilContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import '../../fonts/fonts.css';
+
+.container {
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 60px 40px;
+  position: relative;
+  background-color: #0a092a;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-bottom: 150px;
+  z-index: 0;
+}
+
+.text,
+.valuesHeader,
+.textBox,
+.btnCeleste {
+  position: relative;
+  z-index: 2; 
+}
+
+.semicircle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 290px; 
+  height: 700px;
+  background-image: url("../../img/gradient.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.valuesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 60px;
+  flex-wrap: nowrap;
+}
+
+.robot {
+  width: 220px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.text_title2 {
+  text-align: left;
+}
+
+.text_title2 h2 {
+  font-family: "Balbek Pro", sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.text {
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.sizeMobil {
+  font-family: "Montserrat", sans-serif;
+  color: #a0a0a0;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: none;
+}
+
+.textBox {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(44, 54, 66, 0.2);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 25px 35px;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 130px;
+  margin-top: 30px;
+}
+
+.btnCeleste {
+  background-color: #349aef;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem; 
+  font-weight: 600;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(52, 154, 239, 0.4);
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  width: fit-content;
+}
+
+.btnCeleste:hover {
+  background-color: #349aef;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 
+    0 8px 20px rgba(52, 154, 239, 0.5),
+    0 -4px 6px rgba(52, 154, 239, 0.3);
+}
+
+@media (max-width: 768px) {
+  .valuesHeader {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .robot {
+    margin-bottom: 0;
+    width: 60px;
+    flex-shrink: 0;
+  }
+
+  .text_title2 {
+    text-align: left;
+  }
+
+  .text_title2 h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .textBox {
+    font-size: 0.9rem;
+    padding: 20px 25px;
+    max-width: 90%;
+  }
+
+  .btnCeleste {
+    font-size: 1.2rem;
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .valuesHeader{
+    gap: 10px;
+  }
+  .text_title2 h2 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .robot {
+    width: 50px;
+  }
+
+  .textBox {
+    font-size: 0.85rem;
+    padding: 20px;
+  }
+}

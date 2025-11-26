@@ -1,0 +1,55 @@
+.container {
+  background-color: var(--color-bg);
+  width: 22rem;
+  position: relative;
+  top: 40%;
+  margin: 0 auto;
+  border-radius: 1.68rem;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 20%;
+  margin: 2rem 0;  
+}
+
+p {
+  margin: 0.25rem 2rem;
+  text-align: center;
+  color: var(--color-font);
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.small {
+  padding: 1rem;
+}
+
+.btn {
+margin: 1rem 0; 
+}
+
+button {
+  width: 5rem;
+  padding: .25rem;
+  border: 2px solid var(--color-font);
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  color: var(--color-input);
+  border: 2px solid var(--color-bg);
+  background-color: var(--color-font);
+}

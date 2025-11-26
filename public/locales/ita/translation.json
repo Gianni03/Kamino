@@ -1,0 +1,101 @@
+{
+  "earth": {
+    "touch": "Tocca il mondo",
+    "click": "Clicca sul mondo"
+  },
+  "navbar": {
+    "home": "Pagina iniziale",
+    "about": "Informazioni",
+    "faq": "Domande Frequenti",
+    "blog": "Blog",
+    "cruxieButton": "Prova Cruxie"
+  },
+  "landing": {
+    "hero": "Siamo bravi a creare eredità",
+    "hero-a": "Creiamo eredità digitali per le PMI attraverso l’intelligenza artificiale. Il team della tua azienda può cambiare. La tua eredità, no.",
+    "hero-b": "Voglio costruire la mia eredità ",
+    "hero-scroll-alt": "Icona di scorrimento",
+    "hero-scroll-text": "Clicca sul mondo"
+  },
+  "hero2": {
+    "h2": "Introduzione al problema",
+    "p": "Creiamo agenti di IA addestrati con la conoscenza della tua azienda per agire come il tuo miglior collaboratore.",
+    "assistantTitle": "Immagina questo:",
+    "assistantItem1": "Il tuo ingegnere migliore se ne va… e con lui anni di conoscenze sul prodotto.",
+    "assistantItem2": "Il tuo responsabile commerciale cambia strada… portandosi via informazioni chiave sulle trattative.",
+    "assistantItem3": "Controlli 18 email e 3 chat solo per capire PERCHÉ è stata presa una decisione importante 6 mesi fa…",
+    "p2": "Questa perdita di conoscenze frena la crescita… e mentre il tuo team perde tempo con compiti ripetitivi, l’IA potrebbe gestirli."
+  },
+  "hero3": {
+    "top": "L'expertise del tuo miglior dipendente, operativo 24/7.",
+    "box": "Con Cruxie, ogni dipendente e area aziendale ha un 'agente intelligente' addestrato con la conoscenza reale della tua azienda. In questo modo, automatizzi le attività ripetitive e unifichi la conoscenza della tua impresa per tutto il team.",
+    "bottomTitle": "LA TUA AZIENDA EVOLVE.\n IL TUO LASCITO RIMANE.",
+    "cta": "Voglio costruire il mio lascito ➜"
+  },
+  "hero4": {
+    "title": "PARLIAMO",
+    "subtitle": "Domande? Lasciaci i tuoi dati e il nostro team ti contatterà personalmente.",
+    "form": {
+      "name": "Nome e Cognome:",
+      "email": "Email:",
+      "phone": "Telefono:",
+      "message": "Messaggio:",
+      "submit": "Invia messaggio ➜"
+    }
+  },
+  "hero5": {
+    "title": "Coloro che hanno già creato la loro eredità digitale",
+    "benefit1": "Hanno centralizzato le conoscenze disperse in un unico luogo accessibile a tutto il team.",
+    "benefit2": "Hanno protetto il loro know-how dalla rotazione del personale, evitando di dover ricominciare da zero.",
+    "benefit3": "Hanno aumentato la loro produttività lasciando che l’IA si occupasse delle attività ripetitive."
+  },
+  "heroT": {
+    "h2": "¿Vuoi ",
+    "span": "ne sai di più",
+    "p": "Iscriviti alla nostra lista d'attesa e sii una delle prime persone a provare questa esperienza unica!"
+  },
+  "about": {
+    "title-1": "CHI SIAMO",
+    "holocruxe": "Siamo specialisti nella creazione di eredità digitali per le PMI.",
+    "holocruxeP-1-line1": "Siamo nati da una visione chiara: che la conoscenza e l’esperienza di ogni azienda non vadano perse nel caos delle informazioni disperse o nella rotazione del personale.",
+    "holocruxeP-1-line2": "Crediamo che ogni impresa abbia un’eredità che merita di essere tramandata. Oggi accompagniamo le aziende che vogliono lasciare il segno, aiutandole a organizzare la loro conoscenza e a liberare il potenziale dei loro team.",
+    "title-2-line1": "I Nostri",
+    "title-2-line2": "Valori",
+    "authenticity": "Eredità Intelligente",
+    "authenticityP": "Trasformiamo la conoscenza in un bene digitale vivo, accessibile e scalabile, che stimola la crescita della tua azienda.",
+    "connection": "Automazione Strategica",
+    "connectionP": "Liberiamo il tuo team da compiti ripetitivi e processi manuali, permettendo loro di concentrarsi su ciò che conta davvero: l’innovazione e la strategia.",
+    "privacy": "Conoscenza Sicura",
+    "privacyP": "Proteggiamo il bene più prezioso della tua azienda: le sue informazioni. Garantiamo la privacy, la riservatezza e l’integrità dei tuoi dati.",
+    "button-legacy": "Voglio costruire la mia eredità"
+  },
+  "waitlist": {
+    "h2": "LISTA D'ATTESA ",
+    "btn": "ISCRIVITI",
+    "register": "CONGRATULAZIONI! SEI ORA ENTRATO!",
+    "register2": "Grazie per il tuo interesse!",
+    "closeButton": "Chiudi"
+  },
+  "common": {
+    "faq_line1": "Domande",
+    "faq_line2": "Frequenti"
+  },
+  "faqs": {
+    "0": {
+      "question": "Cos’è Holocruxe?",
+      "answer": "È una piattaforma di intelligenza artificiale che ti permette di creare i tuoi “Cruxie”: agenti intelligenti progettati per centralizzare le conoscenze e l’esperienza della tua azienda in un’eredità digitale viva. Conservano il sapere e automatizzano le attività ripetitive, affinché il tuo team possa concentrarsi su ciò che è strategico."
+    },
+    "1": {
+      "question": "Come funziona Cruxie?",
+      "answer": "Impara a partire dalle informazioni che gli fornisci: documenti, manuali, database, archivi storici, e altro. A partire da questo, crea un modello di conoscenza personalizzato che gli permette di rispondere a domande, automatizzare processi e assistere il tuo team con precisione ed efficienza."
+    },
+    "2": {
+      "question": "Quanto sono privati i miei dati?",
+      "answer": "La sicurezza e la privacy sono la nostra priorità: garantiamo la riservatezza e l'integrità delle tue informazioni. Tutte le conversazioni con Cruxie sono private per impostazione predefinita, e solo tu decidi cosa condividere, con chi e quando. Puoi mantenere il tuo Cruxie per uso interno oppure permettere ad altri team di accedere alle sue conoscenze. Hai il pieno controllo sull’eredità digitale della tua azienda."
+    },
+    "3": {
+      "question": "Come posso iniziare a usare Cruxie nella mia organizzazione?",
+      "answer": "Accedi dalla pagina principale e registrati. Puoi creare un account personale per esplorare la piattaforma o cliccare su “crea un account aziendale”, compilare un modulo e il nostro team ti contatterà per accompagnarti nel processo."
+    }
+  }
+}

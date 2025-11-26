@@ -1,16 +1,21 @@
 :root {
-  /**  Colors **/
   --dark: #20435e;
   --darker: #0f2c43;
   --white: #f7f9f9;
   --aqua: #59c1bd;
   --light-aqua: #8dd3d1;
   --lighter-aqua: #c2e6e5;
-  /* todo modificar nombre y colores */
-
-  /** Fonts **/
-  --main-font: Verdana, Geneva, Tahoma, sans-serif;
-  --second-font: 'Inter', sans-serif;
-
-  /* todo nuevas fuentes */
+  --color-bg: #0A092A;
+  --color-title: linear-gradient(92deg, #1E88E5 -1.02%, #d5deec 36.25%);
+  --color-font: #fff;
+  --color-input: radial-gradient(2920% 60.13% at 50% 53.89%, #1E88E5 0%, #0C0C0C 110%);
+  --color-bgBtn: linear-gradient(90deg, #061927 0%, #4A9ADF 100%);
+  --color-separator: linear-gradient(90deg, #86AFEC -1.02%, #1E88E5 36.25%);
+  --color-btn: #343045;
+  --color-border: rgba(255, 255, 255, 0.55);
+  --color-hoverBtn: linear-gradient(90deg, rgba(74, 36, 232, 0.96) 0%, rgba(199, 193, 225, 0.96) 100%);
+  
+  --font-main: 'Montserrat', sans-serif;
+  --font-secondary: 'Quicksand', sans-serif;
+  --font-menu: 'Angkor', cursive;
 }

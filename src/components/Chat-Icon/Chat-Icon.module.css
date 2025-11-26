@@ -1,0 +1,43 @@
+.chatBotIcon {
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  position: fixed;
+  bottom: 15px;
+  right: 24px;
+  border: 1px solid #59c1bd;
+  padding: 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #359aee; /* <- nuevo color de fondo */
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: aurora 5s infinite alternate;
+  box-shadow: 0 4px 8px rgba(251, 254, 255, 0.2);
+}
+
+.chatBotImage {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.chatBotIcon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(32, 67, 94, 0.3); /* Ajusta según tus preferencias */
+}
+
+.tbRobot {
+  font-size: 40px;
+}
+@media screen and (max-height: 580px) and (min-width: 500px) {
+  .tbRobot {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .tbRobot {
+    font-size: 30px;
+  }
+}

@@ -1,17 +1,23 @@
 .footerDistributed {
-  background-color: #132b3c;
+  background-color: var(--color-bg); 
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: normal 16px sans-serif;
-  padding: 25px 50px;
+  padding: 10px 50px; 
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between; 
+  flex-shrink: 0;
+  margin-top: 0; 
+  flex-wrap: wrap; 
 }
-
+.footerCenter p{
+  color: white !important;
+}
 .copy {
-  color: #dadbdc;
+  color: var(--color-font);
   font-size: 14px;
   margin-top: 40px;
   text-align: center;
@@ -20,7 +26,7 @@
 .footerDistributed p.footerLinks {
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--color-font);
   margin: 0 0 10px;
   padding: 0;
   transition: ease 0.25s;
@@ -38,7 +44,7 @@
   content: " · ";
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: var(--color-font);
   display: inline-block;
   padding-right: 15px;
   padding-left: 15px;
@@ -49,11 +55,18 @@
 }
 
 .footerRight {
-  margin-top: 20px;
-  min-width: 230px;
+  min-width: 150px;
   text-align: right;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px;
+  flex-shrink: 0;
+  padding-right: 50px;
 }
 
+.footerRight .navlink{
+margin-right: 1em;
+}
 .footerDistributed .footerCenter {
   margin-top: 20px;
   display: inline;
@@ -83,19 +96,13 @@
 .footerDistributed p.footerLinks .navlink:hover {
   text-decoration: underline;
 }
-
-.copyMobile {
-  display: none;
+.socialIcon {
+  color: white; 
+  font-size: 30px; 
+  transition: all 0.25s; 
 }
 
-@media (max-width: 920px) {
-  .copyMobile {
-    color: #dadbdc;
-    font-size: 14px;
-    margin-top: 40px;
-    text-align: center;
-    display: inline;
-  }
+@media (max-width: 910px) {
   .copy {
     display: none;
   }
@@ -104,9 +111,19 @@
   .footerCenter {
     text-align: center;
   }
+  .footerCenter p{
+    color: white !important;
+  }
+  .footerRight{
+    justify-content: center;
+    margin-top: 10px;
+    padding-right: 0;
+  }
   .footerDistributed {
     flex-direction: column;
     justify-content: center;
+    padding: 2rem;
+    margin-top: 1rem;
   }
   .footerDistributed .footerLeft p.footerLinks {
     line-height: 1.8;
